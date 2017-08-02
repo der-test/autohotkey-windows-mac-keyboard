@@ -37,15 +37,17 @@ F12::SendInput {Volume_Up}
 ;F20::SendInput {Insert} ; F20 doesn't show up on AHK anymore, see #3
 
 ; F13-15, standard windows mapping
-F13::SendInput {PrintScreen}
-F14::SendInput {ScrollLock}
-F15::SendInput {Pause}
+; n/a on Apple wireless keyboard
+;F13::SendInput {PrintScreen}
+;F14::SendInput {ScrollLock}
+;F15::SendInput {Pause}
 
 ;F16-19 custom app launchers, see http://www.autohotkey.com/docs/Tutorial.htm for usage info
-F16::Run http://twitter.com
-F17::Run http://tumblr.com
-F18::Run http://www.reddit.com
-F19::Run https://facebook.com
+; n/a on Apple wireless keyboard
+;F16::Run http://twitter.com
+;F17::Run http://tumblr.com
+;F18::Run http://www.reddit.com
+;F19::Run https://facebook.com
 
 ; --------------------------------------------------------------
 ; OS X system shortcuts
