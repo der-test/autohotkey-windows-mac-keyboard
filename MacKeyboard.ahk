@@ -84,7 +84,7 @@ F12::SendInput {Volume_Up}
 #t::^t
 
 ; close tab
-#w::^w
+#w::Send ^w
 
 ; Close windows (cmd + q to Alt + F4)
 #q::Send !{F4}
