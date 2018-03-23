@@ -8,7 +8,7 @@ This fork adds functoinality for several keys and optimizations for wireless App
 Installation
 ------------
 
-- Install [AutoHotkey](http://www.autohotkey.com/) or or use the "extract to#" function to run without installation.
+- Install [AutoHotkey](http://www.autohotkey.com/) or or use the "extract to" function to run without installation.
 - Run the `MacKeyboard.ahk` file
 - Put the `MacKeyboard.ahk` file or a shortcut to the file in your Autostart folder to run it automatically on startup
 
