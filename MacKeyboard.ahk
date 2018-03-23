@@ -95,6 +95,17 @@ Lwin & Tab::AltTab
 ; minimize windows
 #m::WinMinimize,a
 
+; Fix/switch mapping of ^° and <> to resemble keyboard layout
+; ^ 029 -> <
+; ° +029 -> >
+; < 056 -> ^
+; > +056 -> ° (only works with unicode)
+SC029::<
++SC029::>
+SC056::^
++SC056::Send {U+00B0}
+
+
 
 ; --------------------------------------------------------------
 ; OS X keyboard mappings for special chars
@@ -149,7 +160,6 @@ Lwin & Tab::AltTab
 !3::SendInput {#}
 
 
-
 ; --------------------------------------------------------------
 ; Custom mappings for special chars
 ; --------------------------------------------------------------
@@ -159,20 +169,3 @@ Lwin & Tab::AltTab
 
 ;^ö::SendInput {{} 
 ;^ä::SendInput {}} 
-
-
-; --------------------------------------------------------------
-; Application specific
-; --------------------------------------------------------------
-
-; Google Chrome
-#IfWinActive, ahk_class Chrome_WidgetWin_1
-
-; Show Web Developer Tools with cmd + alt + i
-#!i::Send {F12}
-
-; Show source code with cmd + alt + u
-#!u::Send ^u
-
-#IfWinActive
-
